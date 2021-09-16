@@ -1,55 +1,19 @@
 import React from 'react';
 import './directory-component.scss';
+import Section from './data';
+import MenuItem from './menu-items/menu-item-component';
 
 class Directory extends React.Component {
     constructor(){
         super();    //It is used to call the constructor of the parent class
-        this.state={
-            sections: [
-            {
-                title: "veggies",
-                imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
-                id: 1,
-                linkUrl: "hats",
-            },
-            {
-                title: "fruits",
-                imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
-                id: 2,
-                linkUrl: "",
-            },
-            {
-                title: "dairy",
-                imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
-                id: 3,
-                linkUrl: "",
-            },
-            {
-                title: "condiments",
-                imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
-                size: "large",
-                id: 4,
-                linkUrl: "",
-            },
-            {
-                title: "misc",
-                imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
-                size: "large",
-                id: 5,
-                linkUrl: "",
-            },
-                ],
-            };
+        this.state={Section};
     }
     render() {
         return(
             <div className="directory">
                 {
-                    this.state.sections.map(({id,title}) =>(
-                        <>
-                        <span>{id}</span>
-                        <span>{title}</span>
-                        </>
+                    this.state.Section.map(({title, ...otherSectionProps}) =>(
+                        <MenuItem title={title}  {...otherSectionProps}/>
                     ))
                 }
             

@@ -1,0 +1,22 @@
+$mycolor : red;
+
+.directory{
+    
+    margin-top:50px;
+    color: $mycolor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.directory .section{
+    text-align: center;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-top:50px;
+    margin-right: 20px;
+    width: 200px;
+    background-color:#e5e5e5;
+    border-radius:10px;
+}

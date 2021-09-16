@@ -7,7 +7,7 @@ class Button extends React.Component {
         super();
 
         this.state = {
-            value: 'Reset'
+            value: 'CheckOut For More'
         }
     }
     render() {

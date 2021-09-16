@@ -1,0 +1,13 @@
+button{
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-60%);
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius:20px;
+    color: purple;
+    height:40px;
+    
+}
