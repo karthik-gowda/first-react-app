@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Section = [
+let Section = [
     {
         title: "veggies",
         imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
