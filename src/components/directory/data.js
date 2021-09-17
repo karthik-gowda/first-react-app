@@ -3,7 +3,7 @@ let Section = [
         title: "veggies",
         imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
         id: 1,
-        linkUrl: "hats",
+        linkUrl: "/veggies",
     },
     {
         title: "fruits",
@@ -21,6 +21,7 @@ let Section = [
         title: "condiments",
         imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
         id: 4,
+        size: "large",
         linkUrl: "",
     },
     {

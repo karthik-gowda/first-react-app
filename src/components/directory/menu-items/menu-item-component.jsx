@@ -1,14 +1,25 @@
 import React from 'react';
+import {withRouter} from 'react-router-dom';
+import TableComp from '../tableproducts/table-component';
 
-class MenuItem extends React.Component {
-    render(){
-        return(
-            <div>
-                <div><img src={this.props.imageUrl} alt="#"width="200px" /></div>
-                <div>{this.props.title}</div>
-            </div>
-        )
-    }
+const MenuItem = ({title,price,id, image, history, match, category, location, linkUrl}) =>{
+    // console.log(match);
+    // console.log(history);
+    // console.log(location);
+
+    return(
+        // <div className= {`${price} menu-item`} onClick={() => history.push(`${match.url}${linkUrl}`)}>
+        //     <div className= "background-image" style={{backgroundImage: `url(${image})`}}/>
+        
+        //     </div>
+
+        <tr>
+            <td>{id}</td>
+            <td>{title}</td>
+            <td><img src={image} alt="Images" width="50px"/></td>
+            <td>{price}</td>
+        </tr>
+    )
 }
 
-export default MenuItem;
+export default withRouter(MenuItem);
