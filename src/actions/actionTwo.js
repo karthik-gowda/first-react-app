@@ -1,4 +1,4 @@
 export const secondAction={
-    type:"Stop",
+    type:"stop",
     payload:false
 }

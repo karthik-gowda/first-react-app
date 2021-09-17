@@ -5,13 +5,13 @@ import {Route} from 'react-router-dom';
 import SignIn from './pages/signinpage/signin-component';
 import Header from './components/header-component/header-component';
 import Cart from './pages/cartpage/cart-component';
-
+import rotateFunction from './test-redux-withUI';
 function App() {
   return (
     <div className="App">
       <Header/>
       <Route exact path="/cart" component={Cart}></Route>
-
+      <Route exact path="/redux" component={rotateFunction}></Route>
       <Route exact path="/home" component={HomePage}></Route>
       <Route exact path="/signin" component={SignIn}></Route>
       <Route exact path="/signup" component={SignUp}></Route>
