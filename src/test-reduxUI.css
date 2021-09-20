@@ -1,0 +1,17 @@
+.App-logo {
+    animation: App-logo-spin infinite 10s linear ;
+    height: 40vmin;
+}
+@keyframes App-logo-spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.App-logo-paused{
+    animation-play-state: paused;
+}
