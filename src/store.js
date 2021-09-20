@@ -1,5 +1,5 @@
 import {applyMiddleware, createStore} from 'redux';
-import rotateReducer from './reducers/rotateReducer';
+import rotateReducer from '../src/redux/reducers/rotateReducer';
 import logger from 'redux-logger';
 
 function configureStore(state={rotate:true}){

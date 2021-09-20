@@ -5,7 +5,7 @@ import {Route} from 'react-router-dom';
 import SignIn from './pages/signinpage/signin-component';
 import Header from './components/header-component/header-component';
 import Cart from './pages/cartpage/cart-component';
-import rotateFunction from './test-redux-withUI';
+import rotateFunction from '../src/redux/test-redux-withUI';
 function App() {
   return (
     <div className="App">
